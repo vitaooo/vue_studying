@@ -11,7 +11,11 @@
     <div id="app">
 
         <div>
-            <p v-html=""></p>
+            <p v-html="(
+                pais == 'argentina' ? argentina:
+                pais == 'brazil' ? brazil:
+                pais == ''
+            )"></p>
             <p></p>
         </div>
 
