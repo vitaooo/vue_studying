@@ -10,15 +10,8 @@
 <body>
     <div id="app">
 
-        <div>
-            <p v-html="(
-                pais == 'argentina' ? argentina:
-                pais == 'brazil' ? brazil:
-                pais == ''
-            )"></p>
-            <p></p>
-        </div>
-
+        <pais :bandeira="china" continente="Ásia"></pais>
+        
     </div>
     <script src="script.js"></script>
 </body>

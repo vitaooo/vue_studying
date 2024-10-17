@@ -2,19 +2,18 @@ function bandeira(pais) {
     return '<img src="'+pais+'.png" />';
 }
 
+Vue.component("pais", {
+    props:['bandeira', 'continente'],
+    template:`<p v-html="bandeira + continente"></p>`
+});
+
 let app = new Vue({
     el:'#app',
     data:{
-        pais:'',
         argentina:bandeira('argentina'),
         brazil:bandeira('brazil'),
         china:bandeira('china'),
         uk:bandeira('uk'),
-        usa:bandeira('usa')
-    },
-    methods:{
-
+        usa:bandeira('usa'),
     }
 });
-
-app.pais = 'usa';
