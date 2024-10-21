@@ -1,11 +1,16 @@
 let app = new Vue({
     el:'#app',
     data:{
-        url:'https://b7web.com.br'
+        nomeInput:'',
+        lista:[]
     },
     methods: {
-        fazAlgumaCoisa:()=>{
-            alert("FEZ!");
+        add:function(){
+            if(this.nomeInput.length > 0) {
+                this.lista.push( this.nomeInput );
+
+                this.nomeInput = '';
+            }
         }
     },
 });

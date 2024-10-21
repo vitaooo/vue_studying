@@ -15,14 +15,22 @@
         </header>
         <section class="container">
             <section class="container_content">
-                <!--v-bind == :''-->
-                <a :href="url">Clique aqui</a>
-                <!--v-on == @  casos de evento.-->
-                <button @click="fazAlgumaCoisa">Clique em mim</button>
+
+               Digite um nome:
+               <input v-model="nomeInput" /> 
+
+               <div>
+                <button @click="add">Adicionar</button>
+               </div>
 
             </section>
             <aside class="container_sidebar">
                 
+                <ul>
+                    <li v-for="item in lista">{{ item }}</li>
+                </ul>
+
+                Total de nomes: {{ lista.lenght }}
 
             </aside>
         </section>
