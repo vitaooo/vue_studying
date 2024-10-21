@@ -11,26 +11,19 @@
     <div id="app">
         <header class="header">
             
+            {{ nome }}<br/>
+
+            {{ nomeInvertido }}
 
         </header>
         <section class="container">
             <section class="container_content">
 
-               Digite um nome:
-               <input v-model="nomeInput" /> 
-
-               <div>
-                <button @click="add">Adicionar</button>
-               </div>
+               
 
             </section>
             <aside class="container_sidebar">
                 
-                <ul>
-                    <li v-for="item in lista">{{ item }}</li>
-                </ul>
-
-                Total de nomes: {{ lista.lenght }}
 
             </aside>
         </section>
