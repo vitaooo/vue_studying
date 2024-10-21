@@ -15,14 +15,10 @@
         </header>
         <section class="container">
             <section class="container_content">
-
-                <form v-on:submit.prevent="enviou">
-
-                    <input type="text" />
-
-                    <input type="submit" value="Enviar">
-
-                </form>
+                <!--v-bind == :''-->
+                <a :href="url">Clique aqui</a>
+                <!--v-on == @  casos de evento.-->
+                <button @click="fazAlgumaCoisa">Clique em mim</button>
 
             </section>
             <aside class="container_sidebar">

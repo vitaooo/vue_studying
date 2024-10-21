@@ -1,11 +1,11 @@
 let app = new Vue({
     el:'#app',
     data:{
-        n:14
+        url:'https://b7web.com.br'
     },
-    methods:{
-        enviou:() => {
-            alert("Enviou");
+    methods: {
+        fazAlgumaCoisa:()=>{
+            alert("FEZ!");
         }
-    }
+    },
 });
