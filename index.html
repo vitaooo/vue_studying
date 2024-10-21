@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Vue.js</title>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            {{ titulo }}<br/>
+
+            <small v-html="subtitulo"></small>
+
+        </header>
+        <section class="container">
+            <section class="container_content">
+
+                {{ carregado ? 'SIM' : 'NÃO' }}
+
+            </section>
+            <aside class="container_sidebar">
+                {{ numero }}
+
+            </aside>
+        </section>
+        <footer class="footer">
+
+            <span v-text="copyright"></span>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
