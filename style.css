@@ -17,14 +17,15 @@ body {
 	min-height:400px;
 }
 .container__content {
-	flex:1;
+	flex:10;
 	background-color:#DDD;
 	padding:10px;
 }
 .container__sidebar {
+	float: right;
 	width:300px;
 	background-color:#D1D1D1;
-	padding:10px;
+	padding: 10px;
 }
 
 .footer {
