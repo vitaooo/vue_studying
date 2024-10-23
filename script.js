@@ -1,26 +1,16 @@
 let app = new Vue({
     el:'#app',
     data:{
-        conta:'',
-        aviso:'',
-        resultado:'',
-        timer:null
+        nomeInput:'',
+        lista:[]
     },
     methods:{
-        fazerConta:function() {
-            this.aviso = '';
+        add:function() {
+            if(this.nomeInput.length >= 3) {
+                this.lista.push( this.nomeInput );
 
-            this.resultado = eval(this.conta);
-        }
-    },
-    watch:{
-        conta:function() {
-            this.aviso = 'Digitando...'
-
-            if(this.timer != null) {
-                clearTimeout(this.timer);
-            }
-            this.timer = setTimeout(this.fazerConta, 1000);
+                this.nomeInput = '';
+            }       
         }
     }
 });
